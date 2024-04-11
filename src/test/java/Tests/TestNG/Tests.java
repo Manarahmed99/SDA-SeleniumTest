@@ -10,6 +10,7 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -38,10 +39,15 @@ public abstract class Tests {
 
     @BeforeMethod
     public void BeforeMethod(){
-        logger.info("Opening Chrome Browser");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("start-maximized");
-        driver = new ChromeDriver(chromeOptions);
+//        logger.info("Opening Chrome Browser");
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("start-maximized");
+//        driver = new ChromeDriver(chromeOptions);
+
+        logger.info("Opening Firefox Browser");
+
+        driver = new FirefoxDriver();
+        driver.manage().window().maximize();
 
         logger.info("Configuring 5 second explicit wait");
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
