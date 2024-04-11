@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class dropdownTest {
+public class DropdownTest {
     /**
      * HW06
      * <br> - navigate to this url https://demoqa.com/select-menu

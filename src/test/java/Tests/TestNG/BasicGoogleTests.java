@@ -33,7 +33,7 @@ public class BasicGoogleTests extends Tests{
         By googleLogoImage = By.cssSelector("img[alt='Google']");
         //Assert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
 
-        SoftAssert  SoftAssert = new SoftAssert();
+        SoftAssert SoftAssert = new SoftAssert();
         SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
         SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
         SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());

@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public abstract class Tests {
+
     protected WebDriver driver;
     protected Wait<WebDriver> wait;
     public static Logger logger;
