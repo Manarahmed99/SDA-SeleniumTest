@@ -1,4 +1,4 @@
-package testPackage;
+package Tests.Junit;
 
 import engine.ActionsBot;
 import org.apache.logging.log4j.LogManager;

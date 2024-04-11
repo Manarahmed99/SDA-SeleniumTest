@@ -1,4 +1,4 @@
-package testPackage;
+package Tests.Junit;
 
 
 import com.github.javafaker.Faker;
