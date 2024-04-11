@@ -7,10 +7,13 @@
      <br/> -  pass the search query as a parameter from the testng.xml file (optional: read it from the testdata.json file)`
     -->
 <suite name=" Demo Suite" verbose="1">
-    <test name="Demo Test">
+
+
+    <test name="Chrome Test">
+        <parameter name="target-browser" value="chrome"/>
         <classes>
             <class name="Tests.TestNG.BasicGoogleTests">
-                <parameter name="search-query" value="clarusway"/>
+                <parameter name="search-query" value="Clarusway"/>
                 <methods>
                     <exclude name="assertGoogleLogoExists"/>
                 </methods>
@@ -18,4 +21,44 @@
             <class name="Tests.TestNG.SoftAssertionsTests"/>
         </classes>
     </test>
+
+    <test name="Firefox Test">
+        <parameter name="target-browser" value="firefox"/>
+        <classes>
+            <class name="Tests.TestNG.BasicGoogleTests">
+                <parameter name="search-query" value="Clarusway"/>
+                <methods>
+                    <exclude name="assertGoogleLogoExists"/>
+                </methods>
+            </class>
+            <class name="Tests.TestNG.SoftAssertionsTests"/>
+        </classes>
+    </test>
+
+    <test name="Edge Test">
+        <parameter name="target-browser" value="edge"/>
+        <classes>
+            <class name="Tests.TestNG.BasicGoogleTests">
+                <parameter name="search-query" value="Clarusway"/>
+                <methods>
+                    <exclude name="assertGoogleLogoExists"/>
+                </methods>
+            </class>
+            <class name="Tests.TestNG.SoftAssertionsTests"/>
+        </classes>
+    </test>
+
+    <!--    <test name="Safari Test">-->
+    <!--        <parameter name="target-browser" value="safari"/>-->
+    <!--        <classes>-->
+    <!--            <class name="tests.testng.BasicGoogleTests">-->
+    <!--                <parameter name="search-query" value="Clarusway"/>-->
+    <!--                <methods>-->
+    <!--                    <exclude name="assertGoogleLogoExists"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--            <class name="tests.testng.SoftAssertionsTests"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
 </suite>

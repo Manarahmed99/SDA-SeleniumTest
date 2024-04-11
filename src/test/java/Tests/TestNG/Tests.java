@@ -10,12 +10,15 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -37,22 +40,26 @@ public abstract class Tests {
         testData =  (JSONObject) new JSONParser().parse( new FileReader("src/test/resources/testData/sample.json", StandardCharsets.UTF_8) );
     }
 
+    @Parameters({ "target-browser" })
     @BeforeMethod
-    public void BeforeMethod(){
-//        logger.info("Opening Chrome Browser");
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("start-maximized");
-//        driver = new ChromeDriver(chromeOptions);
+    public void browserInitialization( String targetBrowser){
 
-        logger.info("Opening Firefox Browser");
+        logger.info("Launching "+targetBrowser+" browser");
 
-        driver = new FirefoxDriver();
+        switch (targetBrowser){
+            case "chrome" -> driver = new ChromeDriver();
+            case "firefox" -> driver = new FirefoxDriver();
+            case "safari" -> driver = new SafariDriver();
+            case "edge" -> driver = new EdgeDriver();
+        }
+
+
+
         driver.manage().window().maximize();
 
         logger.info("Configuring 5 second explicit wait");
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
-        bot = new ActionsBot(driver,wait,logger);
+        bot = new ActionsBot(driver, wait, logger);
     }
 
     @AfterMethod

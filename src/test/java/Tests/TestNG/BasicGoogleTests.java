@@ -27,9 +27,9 @@ public class BasicGoogleTests extends Tests{
         By searchInput = By.id("APjFqb");
         // bot.type(searchInput, "Selenium WebDriver" + Keys.RETURN);
         bot.type(searchInput,searchQuery+ Keys.RETURN);
-      // var searchQuery1 = (String) testData.get("searchQuery");
+       //var searchQuery1 = (String) testData.get("searchQuery");
         By resultStatsLabel = By.id("result-stats");
-//        assert !" ".equals(driver.findElement(resultStatsLabel).getText()) : "Expected  resultStats to be empty ";
+        //assert !" ".equals(driver.findElement(resultStatsLabel).getText()) : "Expected  resultStats to be empty ";
        // Assert.assertNotEquals(driver.findElement(resultStatsLabel).getText()," ") ;
 
         AtomicReference<String> actualText = new AtomicReference<>("");
