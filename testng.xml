@@ -5,6 +5,11 @@
      <br/> -  run both test classes you already created in one test inside one suite
      <br/> -  give the suit a name, give the test a name
      <br/> -  pass the search query as a parameter from the testng.xml file (optional: read it from the testdata.json file)`
+
+     Breakout task: 40 minutes (or till everyone finishes, whichever comes first)
+     <br/> -  cross browser execution (chrome, edge, firefox, safari)
+     <br/> -  parallel execution (tests level)
+     <br/> -  configure your testng.xml file, and modify your test base setup
     -->
 <suite name=" Demo Suite" verbose="1" parallel="tests" thread-count="3">
 
