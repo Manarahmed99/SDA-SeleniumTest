@@ -18,7 +18,7 @@ import java.time.Duration;
 public class AlertTest {
     /**
      * HW07
-     * <br> - navigate to this url http://demo.automationtesting.in/Alerts.html
+     * <br> - navigate to this url <a href="http://demo.automationtesting.in/Alerts.html">Alerts</a>
      * <br> - Click "Alert with OK" and click 'click the button to display an alert box:’
      * <br> - Accept Alert(I am an alert box!) and print alert on console.
      * <br> - Click "Alert with OK & Cancel" and click 'click the button to display a confirm box’

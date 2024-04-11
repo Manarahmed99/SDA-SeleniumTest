@@ -12,7 +12,7 @@ public class FacebookTest {
       /**
        *  HW02
        *  <br> - Invoke Chrome Driver
-       *  <br> - Navigate to Facebook homepage URL: https://www.facebook.com/
+       *  <br> - Navigate to Facebook homepage URL: <a href="https://www.facebook.com/">facebook</a>
        *  <br> - Verify expected URL equals to the actual URL.
        *  <br> - Verify  pagesource of FaceBook contains "Facebook" .
        */

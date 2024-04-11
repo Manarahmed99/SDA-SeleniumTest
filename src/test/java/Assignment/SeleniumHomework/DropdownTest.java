@@ -16,7 +16,7 @@ import java.util.List;
 public class DropdownTest {
     /**
      * HW06
-     * <br> - navigate to this url https://demoqa.com/select-menu
+     * <br> - navigate to this url <a href="https://demoqa.com/select-menu">select-menu</a>
      * <br> - Get all the options of the dropdown
      * <br> - Options size
      * <br> - Print all test

@@ -11,7 +11,7 @@ public class GoogleTest {
     /**
      *  HW01
      *  <br> - Create main method
-     *  <br> - Open google home page: https://www.google.com
+     *  <br> - Open google home page: <a href="https://www.google.com">google</a>
      *  <br> - Print Title on page
      *  <br> - Print Current URL on page
      *  <br> - Close/Quit the browser

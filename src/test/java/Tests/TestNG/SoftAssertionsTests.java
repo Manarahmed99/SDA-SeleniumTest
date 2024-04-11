@@ -9,9 +9,9 @@ public class SoftAssertionsTests extends Tests {
 
     /**
      * Breakout session: 30 minutes
-     * <br/> - navigate to https://practicetestautomation.com/practice-test-login/
+     * <br/> - navigate to <a href="https://practicetestautomation.com/practice-test-login/">practice-test-login</a>
      * <br/> - login using "Username": "student" + "Password": "Password123" (using testdata.json is optional)
-     * <br/> - check that the url is correct "https://practicetestautomation.com/logged-in-successfully/"
+     * <br/> - check that the url is correct "<a href="https://practicetestautomation.com/logged-in-successfully/">logged-in-successfully</a>"
      * <br/> - check the successful login, congratulations message, and logout button are displayed
      */
     @Test(testName = "Basic Soft Assertions Test", description = "Given I am on the practice login page, When I input valid credentials, Then I am logged in successfully.")

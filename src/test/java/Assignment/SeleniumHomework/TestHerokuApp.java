@@ -12,7 +12,7 @@ public class TestHerokuApp {
 
     /**
      * HW03
-     * <br> - Navigate to website  https://testpages.herokuapp.com/styled/index.html
+     * <br> - Navigate to website  <a href="https://testpages.herokuapp.com/styled/index.html">herokuapp</a>
      * <br> - Under the Examples
      * <br> - Click on Locators - Find By Playground Test Page
      * <br> - Under the Examples

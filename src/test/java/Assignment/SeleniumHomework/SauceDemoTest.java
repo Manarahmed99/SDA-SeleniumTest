@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SauceDemoTest {
     /**
      * HW05
-     * <br> - navigate to this url https://www.saucedemo.com/v1/inventory.html
+     * <br> - navigate to this url <a href="https://www.saucedemo.com/v1/inventory.html">inventory</a>
      * <br> - add the first item you find to your cart
      * <br> - open your cart
      * <br> - assert that the item name is correct inside the cart

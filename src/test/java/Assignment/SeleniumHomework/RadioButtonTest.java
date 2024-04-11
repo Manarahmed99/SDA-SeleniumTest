@@ -12,7 +12,7 @@ public class RadioButtonTest {
 
     /**
      * HW04
-     * <br> - Go to URL: https://demoqa.com/radio-button
+     * <br> - Go to URL: <a href="https://demoqa.com/radio-button">radio-button</a>
      * <br> - Verify whether all 3 options given to the question can be selected.
      * <br> - When each option is selected, print the following texts on the console.
      */
