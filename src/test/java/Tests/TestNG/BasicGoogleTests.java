@@ -3,6 +3,7 @@ package Tests.TestNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -17,11 +18,13 @@ public class BasicGoogleTests extends Tests{
      * <br/> - 5. do a quick google search and assert that result stats is not empty using testng
      */
 
-    @Test
-    public void quickGoogleSearch(){
+    @Parameters({ "search-query" })
+    @Test(groups = {"sanityCheck", "guiTests"})
+    public void quickGoogleSearch(String searchQuery){
         bot.navigate("https://www.google.com/");
         By searchInput = By.id("APjFqb");
-        bot.type(searchInput, "Selenium WebDriver" + Keys.RETURN);
+        // bot.type(searchInput, "Selenium WebDriver" + Keys.RETURN);
+        bot.type(searchInput,searchQuery+ Keys.RETURN);
         By resultStatsLabel = By.id("result-stats");
 //        assert !" ".equals(driver.findElement(resultStatsLabel).getText()) : "Expected  resultStats to be empty ";
         Assert.assertNotEquals(driver.findElement(resultStatsLabel).getText()," ") ;

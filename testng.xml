@@ -4,6 +4,7 @@
     <test name="Demo Test">
         <classes>
             <class name="Tests.TestNG.BasicGoogleTests">
+                <parameter name="search-query" value="clarusway"/>
                 <methods>
                     <exclude name="assertGoogleLogoExists"/>
                 </methods>
