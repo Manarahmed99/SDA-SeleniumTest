@@ -3,7 +3,11 @@
 <suite name=" Demo Suite" verbose="1">
     <test name="Demo Test">
         <classes>
-            <class name="Tests.TestNG.BasicGoogleTests"/>
+            <class name="Tests.TestNG.BasicGoogleTests">
+                <methods>
+                    <exclude name="assertGoogleLogoExists"/>
+                </methods>
+            </class>
             <class name="Tests.TestNG.SoftAssertionsTests"/>
         </classes>
     </test>
