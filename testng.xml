@@ -1,5 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+    <!--
+    /**
+     Breakout assignment: 20 minutes
+     <br/> -  Create a testng.xml file
+     <br/> -  run both test classes you already created in one test inside one suite
+     <br/> -  give the suit a name, give the test a name
+     <br/> -  pass the search query as a parameter from the testng.xml file (optional: read it from the testdata.json file)`
+    */
 
+    -->
 <suite name=" Demo Suite" verbose="1">
     <test name="Demo Test">
         <classes>
