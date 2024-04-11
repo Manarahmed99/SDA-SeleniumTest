@@ -2,7 +2,9 @@ package Tests.TestNG;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class BasicGoogleTests extends Tests{
 
@@ -21,6 +23,21 @@ public class BasicGoogleTests extends Tests{
         By searchInput = By.id("APjFqb");
         bot.type(searchInput, "Selenium WebDriver" + Keys.RETURN);
         By resultStatsLabel = By.id("result-stats");
-        assert !" ".equals(driver.findElement(resultStatsLabel).getText()) : "Expected  resultStats to be empty ";
+//        assert !" ".equals(driver.findElement(resultStatsLabel).getText()) : "Expected  resultStats to be empty ";
+        Assert.assertNotEquals(driver.findElement(resultStatsLabel).getText()," ") ;
+    }
+
+    @Test(testName = "Check Google Logo Exists", description = "Given I am on the Google homepage, Then the Google logo should be displayed")
+    public void assertGoogleLogoExists(){
+        bot.navigate("https://www.google.com/");
+        By googleLogoImage = By.cssSelector("img[alt='Google']");
+        //Assert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+
+        SoftAssert  SoftAssert = new SoftAssert();
+        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+        SoftAssert.assertAll();
+
     }
 }
