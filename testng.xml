@@ -17,52 +17,52 @@
     <test name="Chrome Test">
         <parameter name="target-browser" value="chrome"/>
         <classes>
-            <class name="Tests.TestNG.BasicGoogleTests">
+            <class name="TestNGTest.TestNG.BasicGoogleTests">
                 <parameter name="search-query" value="Clarusway"/>
                 <methods>
                     <exclude name="assertGoogleLogoExists"/>
                 </methods>
             </class>
-            <class name="Tests.TestNG.SoftAssertionsTests"/>
+            <class name="TestNGTest.TestNG.SoftAssertionsTests"/>
         </classes>
     </test>
 
     <test name="Firefox Test">
         <parameter name="target-browser" value="firefox"/>
         <classes>
-            <class name="Tests.TestNG.BasicGoogleTests">
+            <class name="TestNGTest.TestNG.BasicGoogleTests">
                 <parameter name="search-query" value="Clarusway"/>
                 <methods>
                     <exclude name="assertGoogleLogoExists"/>
                 </methods>
             </class>
-            <class name="Tests.TestNG.SoftAssertionsTests"/>
+            <class name="TestNGTest.TestNG.SoftAssertionsTests"/>
         </classes>
     </test>
 
     <test name="Edge Test">
         <parameter name="target-browser" value="edge"/>
         <classes>
-            <class name="Tests.TestNG.BasicGoogleTests">
+            <class name="TestNGTest.TestNG.BasicGoogleTests">
                 <parameter name="search-query" value="Clarusway"/>
                 <methods>
                     <exclude name="assertGoogleLogoExists"/>
                 </methods>
             </class>
-            <class name="Tests.TestNG.SoftAssertionsTests"/>
+            <class name="TestNGTest.TestNG.SoftAssertionsTests"/>
         </classes>
     </test>
 
     <!--    <test name="Safari Test">-->
     <!--        <parameter name="target-browser" value="safari"/>-->
     <!--        <classes>-->
-    <!--            <class name="tests.testng.BasicGoogleTests">-->
+    <!--            <class name="TestNGTest.TestNG.BasicGoogleTests">-->
     <!--                <parameter name="search-query" value="Clarusway"/>-->
     <!--                <methods>-->
     <!--                    <exclude name="assertGoogleLogoExists"/>-->
     <!--                </methods>-->
     <!--            </class>-->
-    <!--            <class name="tests.testng.SoftAssertionsTests"/>-->
+    <!--            <class name="TestNGTest.TestNG.SoftAssertionsTests"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 
