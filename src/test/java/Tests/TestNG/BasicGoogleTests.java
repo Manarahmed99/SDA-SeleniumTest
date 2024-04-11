@@ -31,13 +31,13 @@ public class BasicGoogleTests extends Tests{
     public void assertGoogleLogoExists(){
         bot.navigate("https://www.google.com/");
         By googleLogoImage = By.cssSelector("img[alt='Google']");
-        //Assert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+        Assert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
 
-        SoftAssert SoftAssert = new SoftAssert();
-        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
-        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
-        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
-        SoftAssert.assertAll();
+//        SoftAssert SoftAssert = new SoftAssert();
+//        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+//        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+//        SoftAssert.assertTrue(driver.findElement(googleLogoImage).isDisplayed());
+//        SoftAssert.assertAll();
 
     }
 }
