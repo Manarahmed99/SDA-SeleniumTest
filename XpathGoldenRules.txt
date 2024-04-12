@@ -41,3 +41,13 @@ xpath = //tagName[@id='value']
 css = tagName#value
 xpath = //tagName[@class='value']
 css = tagName.value
+
+allure report:
+Configure system environment variables: JAVA_HOME and path
+Install Node.js and NPM
+Go to the root directory of the project for which you want to use Allure Report. Run this command: npm install --save-dev allure-commandline
+execute mvn verify to run your test
+execute npx allure-commandline serve to open the report
+press ctrl+c to close the temp server once you're done
+
+execute npx allure-commandline generate --single-file allure-results to generate a single html file for your allure report
