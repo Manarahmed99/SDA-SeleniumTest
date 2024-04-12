@@ -57,3 +57,5 @@ execute" npx allure-commandline generate --single-file allure-results "to genera
 1- add to class by use :@Listeners(CustomListener.class)
 2- adding in run configure
 3- adding in xml file
+
+page object model => for every page they have class.

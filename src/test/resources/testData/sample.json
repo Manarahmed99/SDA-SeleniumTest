@@ -4,5 +4,9 @@
   "SoftAssertionsTestData": {
     "Username": "student",
     "Password": "Password123"
+  },
+  "SauceDemoLoginData": {
+    "usernameTextArea": "standard_user",
+    "passwordTextArea": "secret_sauce"
   }
 }
