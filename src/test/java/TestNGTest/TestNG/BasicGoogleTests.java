@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-//@Listeners(CustomListener.class)
+@Listeners(CustomListener.class)
 public class BasicGoogleTests extends Tests {
 
     /**
