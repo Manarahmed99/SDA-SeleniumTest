@@ -1,5 +1,6 @@
 package engine;
 
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
@@ -18,6 +19,7 @@ public class ActionsBot {
         this.wait = wait;
         this.logger = logger;
     }
+    @Step
     public void navigate (String url){
         logger.info("Navigating to: "+url);
         driver.get(url);

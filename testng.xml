@@ -12,7 +12,9 @@
      <br/> -  configure your testng.xml file, and modify your test base setup
     -->
 <suite name=" Demo Suite" verbose="1" parallel="tests" thread-count="3">
-
+<listeners>
+    <listener class-name="engine.CustomListener"/>
+</listeners>
 
     <test name="Chrome Test">
         <parameter name="target-browser" value="chrome"/>

@@ -50,4 +50,10 @@ execute mvn verify to run your test
 execute npx allure-commandline serve to open the report
 press ctrl+c to close the temp server once you're done
 
-execute npx allure-commandline generate --single-file allure-results to generate a single html file for your allure report
+execute" npx allure-commandline generate --single-file allure-results "to generate a single html file for your allure report
+
+
+3 ways to configure Listenenr
+1- add to class by use :@Listeners(CustomListener.class)
+2- adding in run configure
+3- adding in xml file
