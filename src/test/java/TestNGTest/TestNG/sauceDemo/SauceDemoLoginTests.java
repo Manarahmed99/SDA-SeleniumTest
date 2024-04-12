@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pages.sauceDemo.Inventory;
 import pages.sauceDemo.Login;
 
 public class SauceDemoLoginTests extends Tests {
@@ -26,9 +27,12 @@ public class SauceDemoLoginTests extends Tests {
         JSONObject testCaseData = (JSONObject) testData.get("SauceDemoLoginData");
         loginPage.login((String)testCaseData.get("usernameTextArea"), (String)testCaseData.get("passwordTextArea"));
 
+        Inventory inventoryPage = new Inventory(driver, bot);
+        Assert.assertEquals(inventoryPage.readHeader(), "Products");
 
-        By product_label = By.className("product_label");
-        Assert.assertEquals(driver.findElement(product_label).getText(),"Products");
+
+//        By product_label = By.className("product_label");
+//        Assert.assertEquals(bot.getText(product_label),"Products");
     }
 
     @Test(testName = "Unsuccessful Login Test", description = "Given I am on the login page, When I input invalid credentials, Then show error message.")
