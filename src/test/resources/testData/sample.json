@@ -8,5 +8,14 @@
   "SauceDemoLoginData": {
     "usernameTextArea": "standard_user",
     "passwordTextArea": "secret_sauce"
+  },
+  "expandTesting": {
+    "Username": "practice",
+    "Password": "SuperSecretPassword!",
+    "ExpectedSuccessMessage": "You logged into a secure area!",
+    "WrongPassword": "NONONONONO",
+    "ExpectedFailureMessagePassword": "Your password is invalid!",
+    "WrongUsername": "NONONONONO",
+    "ExpectedFailureMessageUsername": "Your username is invalid!"
   }
 }

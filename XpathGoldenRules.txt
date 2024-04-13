@@ -60,3 +60,4 @@ execute" npx allure-commandline generate --single-file allure-results "to genera
 
 page object model => for every page they have class.
 Assert belong test class and other interaction belong pages class
+Fluent Pattern = > every method return something
